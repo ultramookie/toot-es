@@ -8,7 +8,7 @@ from elasticsearch import Elasticsearch
 
 tootinfo = {}
 
-now = datetime.datetime.now()
+now = datetime.datetime.utcnow()
 index = "tootinfo-" + str(now.year)
 doc_type = "tootinfo"
 elastichost='localhost:9200'
